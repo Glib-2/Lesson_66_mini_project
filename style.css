@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: #f5f6fa;
+    font-family: Arial, sans-serif;
+}
+
+.Main-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Mini-card1,
+.Mini-card2,
+.Mini-card3,
+.Mini-card4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.Ikon-box1,
+.Ikon-box2,
+.Ikon-box3,
+.Ikon-box4 {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ikon-box1 {
+    background: #d9e8fb;
+}
+
+.Ikon-box2 {
+    background: #dff8e9;
+}
+
+.Ikon-box3 {
+    background: #fff2cc;
+}
+
+.Ikon-box4 {
+    background: #f6e0ff;
+}
+
+.bi-wallet2 {
+    color: #4c5ab3;
+    font-size: 22px;
+}
+
+.bi-check2-circle {
+    color: #3cb96d;
+    font-size: 22px;
+}
+
+.bi-clock {
+    color: #d69f1d;
+    font-size: 22px;
+}
+
+.bi-star-fill {
+    color: #b53ad3;
+    font-size: 22px;
+}
+
+.Card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Card-info p {
+    margin: 0;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+.Card-info h5 {
+    margin: 6px 0 0;
+    font-size: 24px;
+}
+
+.Main-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Table_with_files,
+.Table_of_tasks {
+    width: 100%;
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Table2-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+    box-sizing: border-box;
+}
+
+.Table2-left,
+.Table2-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Table2-left {
+    min-width: 0;
+}
+
+.Table2-right {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.Table2-left p,
+.Table2-right p {
+    margin: 0;
+    font-size: 15px;
+}
