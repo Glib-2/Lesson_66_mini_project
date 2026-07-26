@@ -1,289 +1,277 @@
 body {
     margin: 0;
-    padding: 20px;
+    background: #f5f6fa;
     font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
-    color: #263247;
-    box-sizing: border-box;
-}
-
-main {
-    width: 100%;
 }
 
 .Main-section1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 30px;
+    padding: 30px;
 }
 
 .Mini-card1,
 .Mini-card2,
 .Mini-card3,
 .Mini-card4 {
-    width: 300px;
+    width: 260px;
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 18px;
-    background-color: white;
-    border: 1px solid #dfe3e8;
+    background: white;
+    border: 1px solid #d9d9d9;
     border-radius: 12px;
-    box-sizing: border-box;
+    padding: 20px;
 }
 
 .Ikon-box1,
 .Ikon-box2,
 .Ikon-box3,
 .Ikon-box4 {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+}
+
+.Ikon-box1 i,
+.Ikon-box2 i,
+.Ikon-box3 i,
+.Ikon-box4 i {
     font-size: 24px;
 }
 
 .Ikon-box1 {
-    background-color: #e6f0ff;
-    color: #4d8ee8;
+    background: #d9e8fb;
+    color: #3b82f6;
 }
 
 .Ikon-box2 {
-    background-color: #e3f8ec;
-    color: #43bf7b;
+    background: #dff8e9;
+    color: #22c55e;
 }
 
 .Ikon-box3 {
-    background-color: #fff3d2;
-    color: #d99b18;
+    background: #fff2cc;
+    color: #eab308;
 }
 
 .Ikon-box4 {
-    background-color: #f8e3fa;
-    color: #bd3bc4;
+    background: rgba(244, 229, 248);
+    color: rgba(192, 45, 213);
 }
 
 .Card-info p {
-    margin: 0 0 5px;
-    color: #718096;
-    font-size: 14px;
+    margin: 0;
+    color: gray;
 }
 
 .Card-info h5 {
-    margin: 0;
-    font-size: 22px;
-    color: #263247;
+    margin: 5px 0 0;
 }
 
 .Main-section2 {
-    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 30px;
+    padding: 30px;
 }
 
-.Table_with_files {
-    width: 60%;
-    min-height: 350px;
-    padding: 25px;
-    background-color: white;
-    border: 1px solid #dfe3e8;
-    border-radius: 12px;
-    box-sizing: border-box;
-}
-
+.Table_with_files,
 .Table_of_tasks {
-    width: 40%;
-    min-height: 350px;
-    padding: 25px;
-    background-color: white;
-    border: 1px solid #dfe3e8;
+    width: 600px;
+    background: white;
     border-radius: 12px;
-    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
 }
 
-.Main-section2-title,
-.Main-section2-title2 {
-    margin: 0 0 20px 0px;
-}
-
-.Main-section2{
-    width:100%;
-}
-
-.Table1-text {
-    min-height: 55px;
+.Table1-header,
+.Table2-header {
     display: flex;
+    gap: 50px;
     align-items: center;
-    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.Table1-text,
+.Table2-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
     border-bottom: 1px solid #eceff3;
+}
+
+.Table1-text p,
+.Table2-left p,
+.something p {
+    margin: 0;
 }
 
 .Table1-text p {
-    width: 100%;
-    margin: 0;
-    color: #465267;
+    margin-right: auto;
+    margin-left: 12px;
 }
 
-.Table1-text i {
-    font-size: 19px;
-}
-
-.bi-file-earmark-pdf {
-    color: #ef5661;
-}
-
-.bi-file-earmark-image {
-    color: #4d8ee8;
-}
-
-.bi-file-earmark-code {
-    color: #43bf7b;
-}
-
-.bi-file-earmark-zip {
-    color: #e2a52e;
-}
-
-.bi-download,
-.bi-trash3 {
-    color: #8390a0;
-    cursor: pointer;
-}
-
-.bi-download:hover {
-    color: #4d8ee8;
-}
-
-.bi-trash3:hover {
-    color: #ef5661;
-}
-
-.Table2-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.Table2-header i {
-    margin-bottom: 20px;
-    font-size: 21px;
-    color: #7a8797;
-}
-
-.Table2-text {
-    min-height: 55px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border-bottom: 1px solid #eceff3;
+.Table1-text i:last-child {
+    margin-left: 15px;
 }
 
 .Table2-left {
-    width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
-.Table2-left p {
-    margin: 0;
-    color: #465267;
-}
-
-.Table2-left i {
-    color: #9aa5b1;
-    font-size: 20px;
-}
-
-.Table2-left .bi-heart-fill {
-    color: #ef5661;
-}
-
-.Table2-right {
+.something {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 13px;
     font-weight: bold;
-    white-space: nowrap;
 }
 
-.Table2-right p {
-    margin: 0;
+.success {
+    background: #dff8e9;
+    color: #27ae60;
 }
 
-.status-success {
-    background-color: #ddf7e8;
-    color: #26a866;
-}
-
-.status-process {
-    background-color: #e3ecff;
+.process {
+    background: #d9e8fb;
     color: #4d7fd1;
 }
 
-.status-warning {
-    background-color: #fff0c7;
-    color: #d29116;
+.warning {
+    background: #fff2cc;
+    color: #d99b18;
+}
+
+.bi-file-earmark-pdf {
+    color: #ef4444;
+}
+
+.bi-file-earmark-image {
+    color: #22c55e;
+}
+
+.bi-file-earmark-code {
+    color: #3b82f6;
+}
+
+.bi-file-earmark-zip {
+    color: #eab308;
+}
+
+.bi-download {
+    color: #6b7280;
+}
+
+.bi-heart-fill {
+    color: #ef4444;
+}
+
+.bi-heart {
+    color: #9ca3af;
+}
+
+.bi-download,
+.bi-trash3 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bi-download:hover {
+    color: #3b82f6;
+}
+
+.bi-trash3:hover {
+    color: #ef4444;
 }
 
 @media (max-width: 1200px) {
-    .Main-section1 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .Main-section2 {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .Table_with_files,
     .Table_of_tasks {
-        width: 100%;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
     .Main-section1 {
         gap: 20px;
+        padding: 20px;
     }
 
     .Mini-card1,
     .Mini-card2,
     .Mini-card3,
     .Mini-card4 {
-        width: 100%;
+        width: 90%;
+    }
+
+    .Main-section2 {
+        padding: 20px;
+        gap: 20px;
     }
 
     .Table_with_files,
     .Table_of_tasks {
-        padding: 20px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Table1-text,
+    .Table2-text {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .Table1-text p,
+    .Table2-left p,
+    .something p {
+        font-size: 13px;
+    }
+
+    .something {
+        padding: 4px 8px;
+        font-size: 12px;
+        gap: 10px;
     }
 }
 
-@media (max-width: 360px) {
-    body {
-        padding: 10px;
-    }
-
-    .Main-section1 {
-        flex-direction: column;
-        gap: 15px;
-    }
-
+@media (max-width: 480px) {
+    .Table1-text,
     .Table2-text {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .Table1-text p,
+    .Table2-left p {
+        font-size: 12px;
+    }
+
+    .something {
+        padding: 3px 6px;
+        gap: 10px;
+    }
+
+    .Card-info h5 {
+        font-size: 18px;
+    }
+
+    .Card-info p {
+        font-size: 13px;
     }
 }
