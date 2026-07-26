@@ -1,142 +1,289 @@
 body {
     margin: 0;
-    background-color: #f5f6fa;
+    padding: 20px;
     font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #263247;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
 }
 
 .Main-section1 {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
 }
 
 .Mini-card1,
 .Mini-card2,
 .Mini-card3,
 .Mini-card4 {
+    width: 300px;
     display: flex;
     align-items: center;
     gap: 15px;
-    background: white;
-    border: 1px solid #d9d9d9;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #dfe3e8;
     border-radius: 12px;
-    padding: 15px;
+    box-sizing: border-box;
 }
 
 .Ikon-box1,
 .Ikon-box2,
 .Ikon-box3,
 .Ikon-box4 {
-    width: 45px;
-    height: 45px;
-    border-radius: 8px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    font-size: 24px;
 }
 
 .Ikon-box1 {
-    background: #d9e8fb;
+    background-color: #e6f0ff;
+    color: #4d8ee8;
 }
 
 .Ikon-box2 {
-    background: #dff8e9;
+    background-color: #e3f8ec;
+    color: #43bf7b;
 }
 
 .Ikon-box3 {
-    background: #fff2cc;
+    background-color: #fff3d2;
+    color: #d99b18;
 }
 
 .Ikon-box4 {
-    background: #f6e0ff;
-}
-
-.bi-wallet2 {
-    color: #4c5ab3;
-    font-size: 22px;
-}
-
-.bi-check2-circle {
-    color: #3cb96d;
-    font-size: 22px;
-}
-
-.bi-clock {
-    color: #d69f1d;
-    font-size: 22px;
-}
-
-.bi-star-fill {
-    color: #b53ad3;
-    font-size: 22px;
-}
-
-.Card-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #f8e3fa;
+    color: #bd3bc4;
 }
 
 .Card-info p {
-    margin: 0;
-    color: #7a7a7a;
+    margin: 0 0 5px;
+    color: #718096;
     font-size: 14px;
 }
 
 .Card-info h5 {
-    margin: 6px 0 0;
-    font-size: 24px;
+    margin: 0;
+    font-size: 22px;
+    color: #263247;
 }
 
 .Main-section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     width: 100%;
-    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.Table_with_files {
+    width: 60%;
+    min-height: 350px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dfe3e8;
+    border-radius: 12px;
     box-sizing: border-box;
 }
 
-.Table_with_files,
 .Table_of_tasks {
-    width: 100%;
-    min-width: 0;
-    background: #fff;
-    border: 1px solid #d9d9d9;
+    width: 40%;
+    min-height: 350px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dfe3e8;
     border-radius: 12px;
-    padding: 20px;
     box-sizing: border-box;
+}
+
+.Main-section2-title,
+.Main-section2-title2 {
+    margin: 0 0 20px 0px;
+}
+
+.Main-section2{
+    width:100%;
+}
+
+.Table1-text {
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #eceff3;
+}
+
+.Table1-text p {
+    width: 100%;
+    margin: 0;
+    color: #465267;
+}
+
+.Table1-text i {
+    font-size: 19px;
+}
+
+.bi-file-earmark-pdf {
+    color: #ef5661;
+}
+
+.bi-file-earmark-image {
+    color: #4d8ee8;
+}
+
+.bi-file-earmark-code {
+    color: #43bf7b;
+}
+
+.bi-file-earmark-zip {
+    color: #e2a52e;
+}
+
+.bi-download,
+.bi-trash3 {
+    color: #8390a0;
+    cursor: pointer;
+}
+
+.bi-download:hover {
+    color: #4d8ee8;
+}
+
+.bi-trash3:hover {
+    color: #ef5661;
+}
+
+.Table2-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Table2-header i {
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #7a8797;
 }
 
 .Table2-text {
+    min-height: 55px;
     display: flex;
     align-items: center;
-    width: 100%;
-    gap: 12px;
-    padding: 14px 0;
-    border-bottom: 1px solid #ececec;
-    box-sizing: border-box;
-}
-
-.Table2-left,
-.Table2-right {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 15px;
+    border-bottom: 1px solid #eceff3;
 }
 
 .Table2-left {
-    min-width: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Table2-left p {
+    margin: 0;
+    color: #465267;
+}
+
+.Table2-left i {
+    color: #9aa5b1;
+    font-size: 20px;
+}
+
+.Table2-left .bi-heart-fill {
+    color: #ef5661;
 }
 
 .Table2-right {
-    flex-shrink: 0;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.Table2-left p,
 .Table2-right p {
     margin: 0;
-    font-size: 15px;
+}
+
+.status-success {
+    background-color: #ddf7e8;
+    color: #26a866;
+}
+
+.status-process {
+    background-color: #e3ecff;
+    color: #4d7fd1;
+}
+
+.status-warning {
+    background-color: #fff0c7;
+    color: #d29116;
+}
+
+@media (max-width: 1200px) {
+    .Main-section1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Main-section2 {
+        flex-direction: column;
+    }
+
+    .Table_with_files,
+    .Table_of_tasks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .Main-section1 {
+        gap: 20px;
+    }
+
+    .Mini-card1,
+    .Mini-card2,
+    .Mini-card3,
+    .Mini-card4 {
+        width: 100%;
+    }
+
+    .Table_with_files,
+    .Table_of_tasks {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 10px;
+    }
+
+    .Main-section1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Table2-text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
 }
