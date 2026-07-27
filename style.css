@@ -2,11 +2,9 @@ body {
     margin: 0;
     background: #f5f6fa;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
 }
 
 header {
-    width: auto;
     min-height: 73px;
     margin-left: 290px;
     display: flex;
@@ -19,26 +17,24 @@ header {
 }
 
 .search_box {
+    width: 260px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: 300px;
-    padding: 10px;
+    padding: 10px 15px;
     background: #f1f3f7;
     border-radius: 20px;
 }
 
 .search_box i {
+    margin-right: 10px;
     color: #888;
     font-size: 15px;
 }
 
 .Search_field {
     width: 100%;
-    min-width: 0;
     border: none;
-    outline: none;
-    background: transparent;
+    background: #f1f3f7;
 }
 
 .header_right {
@@ -48,22 +44,9 @@ header {
 }
 
 .header_right i {
+    margin-right: 5px;
     font-size: 19px;
     color: #777;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-
-.dropdown::after {
-    content: "⌄";
-    color: #777;
-    font-size: 14px;
     cursor: pointer;
 }
 
@@ -77,37 +60,6 @@ header {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 42px;
-    right: 0;
-    width: 190px;
-    margin: 0;
-    padding: 6px 0;
-    list-style: none;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-    display: none;
-    z-index: 100;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-item {
-    display: block;
-    padding: 10px 15px;
-    color: #333;
-    text-decoration: none;
-}
-
-.dropdown-item:hover {
-    background: #f1f3f7;
 }
 
 main {
@@ -129,11 +81,10 @@ main {
     width: 300px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    padding: 20px;
     background: white;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
-    padding: 20px;
 }
 
 .Ikon-box1,
@@ -142,6 +93,7 @@ main {
 .Ikon-box4 {
     width: 50px;
     height: 50px;
+    margin-right: 15px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -171,8 +123,8 @@ main {
 }
 
 .Ikon-box4 {
-    background: rgb(244, 229, 248);
-    color: rgb(192, 45, 213);
+    background: #f4e5f8;
+    color: #c02dd5;
 }
 
 .Card-info p {
@@ -194,11 +146,10 @@ main {
 .Table_with_files,
 .Table_of_tasks {
     width: 600px;
-    min-width: 0;
-    background: white;
-    border-radius: 12px;
-    border: 1px solid #d9d9d9;
     padding: 20px;
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
 }
 
 .Table1-header,
@@ -210,46 +161,39 @@ main {
     margin-bottom: 20px;
 }
 
-.Table1-header h5,
-.Table2-header h5 {
+.Main-section2-title,
+.Main-section2-title2 {
     margin: 0;
 }
 
 .Table1-text,
 .Table2-text {
+    min-height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    min-height: 60px;
     border-bottom: 1px solid #eceff3;
-}
-
-.Table1-text p,
-.Table2-left p,
-.something p {
-    margin: 0;
 }
 
 .Table1-text p {
     width: 100%;
-    margin-left: 2px;
-    word-wrap: break-word;
-}
-
-.Table1-text i:last-child {
-    margin-left: 5px;
+    margin: 0 0 0 2px;
 }
 
 .Table2-left {
     display: flex;
     align-items: center;
     gap: 12px;
-    min-width: 0;
 }
 
 .Table2-left p {
-    word-wrap: break-word;
+    margin: 0;
+}
+
+.Table1-text i,
+.Table2-left i {
+    margin-right: 5px;
 }
 
 .something {
@@ -260,6 +204,10 @@ main {
     border-radius: 20px;
     font-size: 13px;
     font-weight: bold;
+}
+
+.something p {
+    margin: 0;
 }
 
 .success {
@@ -308,7 +256,6 @@ main {
 .bi-download,
 .bi-trash3 {
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .bi-download:hover {
@@ -321,7 +268,6 @@ main {
 
 @media (max-width: 1200px) {
     header {
-        width: auto;
         margin-left: 220px;
     }
 
@@ -341,14 +287,12 @@ main {
 
     .Table_with_files,
     .Table_of_tasks {
-        width: 100%;
-        max-width: 800px;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        width: auto;
         margin-left: 0;
         padding: 15px;
     }
@@ -374,12 +318,11 @@ main {
     .Mini-card2,
     .Mini-card3,
     .Mini-card4 {
-        width: 100%;
+        width: 300px;
     }
 
     .Main-section2 {
         padding: 20px;
-        gap: 20px;
     }
 
     .Table_with_files,
@@ -391,12 +334,6 @@ main {
     .Table1-text,
     .Table2-text {
         font-size: 14px;
-    }
-
-    .Table1-text p,
-    .Table2-left p,
-    .something p {
-        font-size: 13px;
     }
 
     .something {
@@ -412,7 +349,7 @@ main {
     }
 
     .search_box {
-        width: 180px;
+        width: 190px;
         padding: 8px 10px;
     }
 
@@ -430,10 +367,6 @@ main {
         font-size: 11px;
     }
 
-    .dropdown::after {
-        display: none;
-    }
-
     .Main-section1,
     .Main-section2 {
         padding: 12px;
@@ -444,11 +377,17 @@ main {
     .Mini-card2,
     .Mini-card3,
     .Mini-card4 {
+        width: 300px;
         padding: 15px;
     }
 
-    .Table1-header h5,
-    .Table2-header h5 {
+    .Table1-header,
+    .Table2-header {
+        gap: 10px;
+    }
+
+    .Main-section2-title,
+    .Main-section2-title2 {
         font-size: 16px;
     }
 
@@ -457,26 +396,12 @@ main {
     }
 
     .Table2-text {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
         padding: 12px 0;
     }
 
     .something {
         margin-left: 30px;
-    }
-}
-
-@media (min-width: 360px) {
-    .search_box {
-        width: 140px;
-    }
-
-    .header_right {
-        gap: 8px;
-    }
-
-    .header_right i {
-        font-size: 16px;
     }
 }
