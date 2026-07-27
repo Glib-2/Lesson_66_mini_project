@@ -2,16 +2,18 @@ body {
     margin: 0;
     background: #f5f6fa;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 header {
-    width: 100%;
-    height: auto;
+    width: auto;
+    min-height: 73px;
     margin-left: 290px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px 20px 20px;
+    gap: 20px;
+    padding: 20px;
     background: white;
     border-bottom: 1px solid #ddd;
 }
@@ -21,18 +23,19 @@ header {
     align-items: center;
     gap: 10px;
     width: 300px;
-    height: auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     background: #f1f3f7;
     border-radius: 20px;
 }
 
 .search_box i {
     color: #888;
+    font-size: 15px;
 }
 
 .Search_field {
     width: 100%;
+    min-width: 0;
     border: none;
     outline: none;
     background: transparent;
@@ -47,6 +50,21 @@ header {
 .header_right i {
     font-size: 19px;
     color: #777;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.dropdown::after {
+    content: "⌄";
+    color: #777;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .profile-btn {
@@ -59,6 +77,41 @@ header {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 190px;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    display: none;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background: #f1f3f7;
+}
+
+main {
+    margin-left: 290px;
 }
 
 .Main-section1 {
@@ -118,8 +171,8 @@ header {
 }
 
 .Ikon-box4 {
-    background: rgba(244, 229, 248);
-    color: rgba(192, 45, 213);
+    background: rgb(244, 229, 248);
+    color: rgb(192, 45, 213);
 }
 
 .Card-info p {
@@ -141,6 +194,7 @@ header {
 .Table_with_files,
 .Table_of_tasks {
     width: 600px;
+    min-width: 0;
     background: white;
     border-radius: 12px;
     border: 1px solid #d9d9d9;
@@ -150,9 +204,15 @@ header {
 .Table1-header,
 .Table2-header {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
     margin-bottom: 20px;
+}
+
+.Table1-header h5,
+.Table2-header h5 {
+    margin: 0;
 }
 
 .Table1-text,
@@ -160,7 +220,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    gap: 10px;
+    min-height: 60px;
     border-bottom: 1px solid #eceff3;
 }
 
@@ -171,18 +232,24 @@ header {
 }
 
 .Table1-text p {
-    margin-right: auto;
-    margin-left: 12px;
+    width: 100%;
+    margin-left: 2px;
+    word-wrap: break-word;
 }
 
 .Table1-text i:last-child {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .Table2-left {
     display: flex;
     align-items: center;
     gap: 12px;
+    min-width: 0;
+}
+
+.Table2-left p {
+    word-wrap: break-word;
 }
 
 .something {
@@ -253,6 +320,19 @@ header {
 }
 
 @media (max-width: 1200px) {
+    header {
+        width: auto;
+        margin-left: 220px;
+    }
+
+    main {
+        margin-left: 220px;
+    }
+
+    .Main-section1 {
+        gap: 30px;
+    }
+
     .Main-section2 {
         flex-direction: column;
         align-items: center;
@@ -261,11 +341,30 @@ header {
 
     .Table_with_files,
     .Table_of_tasks {
-        width: 90%;
+        width: 100%;
+        max-width: 800px;
     }
 }
 
 @media (max-width: 768px) {
+    header {
+        width: auto;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .search_box {
+        width: 220px;
+    }
+
+    .header_right {
+        gap: 14px;
+    }
+
     .Main-section1 {
         gap: 20px;
         padding: 20px;
@@ -275,7 +374,7 @@ header {
     .Mini-card2,
     .Mini-card3,
     .Mini-card4 {
-        width: 90%;
+        width: 100%;
     }
 
     .Main-section2 {
@@ -292,7 +391,6 @@ header {
     .Table1-text,
     .Table2-text {
         font-size: 14px;
-        gap: 10px;
     }
 
     .Table1-text p,
@@ -302,33 +400,83 @@ header {
     }
 
     .something {
-        padding: 4px 8px;
+        padding: 5px 9px;
         font-size: 12px;
-        gap: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .Table1-text,
-    .Table2-text {
+    header {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .search_box {
+        width: 180px;
+        padding: 8px 10px;
+    }
+
+    .header_right {
         gap: 10px;
     }
 
-    .Table1-text p,
-    .Table2-left p {
-        font-size: 12px;
+    .header_right i {
+        font-size: 17px;
+    }
+
+    .profile-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .dropdown::after {
+        display: none;
+    }
+
+    .Main-section1,
+    .Main-section2 {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .Mini-card1,
+    .Mini-card2,
+    .Mini-card3,
+    .Mini-card4 {
+        padding: 15px;
+    }
+
+    .Table1-header h5,
+    .Table2-header h5 {
+        font-size: 16px;
+    }
+
+    .Table1-text {
+        gap: 7px;
+    }
+
+    .Table2-text {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px 0;
     }
 
     .something {
-        padding: 3px 6px;
-        gap: 10px;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 360px) {
+    .search_box {
+        width: 140px;
     }
 
-    .Card-info h5 {
-        font-size: 18px;
+    .header_right {
+        gap: 8px;
     }
 
-    .Card-info p {
-        font-size: 13px;
+    .header_right i {
+        font-size: 16px;
     }
 }
