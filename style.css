@@ -4,6 +4,63 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    width: 100%;
+    height: auto;
+    margin-left: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    background: #f1f3f7;
+    border-radius: 20px;
+}
+
+.search_box i {
+    color: #888;
+}
+
+.Search_field {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_right i {
+    font-size: 19px;
+    color: #777;
+}
+
+.profile-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: #4285f4;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .Main-section1 {
     display: flex;
     justify-content: center;
@@ -16,7 +73,7 @@ body {
 .Mini-card2,
 .Mini-card3,
 .Mini-card4 {
-    width: 260px;
+    width: 300px;
     display: flex;
     align-items: center;
     gap: 15px;
